@@ -2,7 +2,7 @@
 
 **The first fully systematic AGI agent browser.**
 
-A two-layer AI architecture that plans, decides, and executes browser interactions with zero human intervention. Sys2 (LLM planner) generates test scripts from natural language. Sys1 (local classifier) picks exact DOM elements. agent-browser executes via CDP at machine speed.
+A two-layer AI architecture that plans, decides, and executes browser interactions with zero human intervention. Sys2 (LLM planner) generates test scripts from natural language. Sys1 (local classifier) picks exact DOM elements. agent-browser executes via CDP at machine speed. Only requires a openAI compatible API key, no typesage.ai API dependency!
 
 ```
 User: "Login, go to leads, note first lead, logout"
