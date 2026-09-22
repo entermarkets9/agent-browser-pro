@@ -1,0 +1,12 @@
+.venv/
+node_modules/
+.env
+.env.local
+__pycache__/
+*.pyc
+_jev-browser-src/
+screenshots/
+*.egg-info/
+dist/
+build/
+.jev-browser/

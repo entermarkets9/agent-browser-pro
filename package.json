@@ -1,0 +1,16 @@
+{
+  "name": "br-use-toolchain",
+  "version": "1.0.0",
+  "description": "Local browser testing toolchain: jev-browser + Von (System 1) + Kilo MCP.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tontoko/jev-browser": "file:_jev-browser-src/tontoko-jev-browser-0.8.0.tgz"
+  }
+}
