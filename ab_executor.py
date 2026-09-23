@@ -46,8 +46,8 @@ def parse_interactive_elements(snapshot: str) -> list[dict[str, Any]]:
     Only returns actionable elements (button, textbox, link, input, combobox).
     """
     elements = []
-    INTERACTIVE_ROLES = {"button", "textbox", "input", "link", "combobox", "checkbox", "radio", "switch", "tab", "menuitem"}
-    pattern = r'- (\w+)\s+"([^"]*)"\s+\[ref=(\w+)\]'
+    INTERACTIVE_ROLES = {"button", "textbox", "input", "link", "combobox", "checkbox", "radio", "switch", "tab", "menuitem", "spinbutton"}
+    pattern = r'- (\w+)\s+"([^"]*)"\s+\[[^\]]*ref=(\w+)'
     for match in re.finditer(pattern, snapshot):
         role = match.group(1)
         if role.lower() not in INTERACTIVE_ROLES:

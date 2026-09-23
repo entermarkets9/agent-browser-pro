@@ -202,4 +202,12 @@ def run_single(action: str, target: str = "", value: str = "") -> dict:
             }
         return {"success": False, "error": f"No input found for: {target}"}
 
+    if action == "press_key":
+        result = ab_executor.press_key(target)
+        return {
+            "success": True,
+            "result": result,
+            "duration_ms": int((time.time() - start) * 1000),
+        }
+
     return {"success": False, "error": f"Unknown action: {action}"}
